@@ -36,69 +36,40 @@ python -m venv .venv
 # python3 -m venv .venv
 # source .venv/bin/activate
 2) Instalar dependencias (si existe requirements.txt)
-bash
-Copiar
-Editar
+
 pip install -r requirements.txt
 3) Ejecutar un script de ejemplo
 Ajusta el nombre del archivo según tu carpeta/ejercicio (por ej. main.py o scripts/saludo.py).
 
-bash
-Copiar
-Editar
+
 python main.py
 # o
 python scripts/saludo.py --nombre "Benjamín"
 🧪 Pruebas (opcional)
-bash
-Copiar
-Editar
+
 pytest -q
 📘 Ejemplos de uso
 A) Ejecutar un script CLI
-bash
-Copiar
-Editar
+
 python scripts/operaciones.py --suma 5 7
 # → Resultado: 12
 B) Usar una función desde un módulo
-python
-Copiar
-Editar
+
 # archivo: demo.py
 from utils.matematicas import sumar
 
 print(sumar(2, 3))  # 5
-bash
-Copiar
-Editar
+
 python demo.py
 C) Ejecutar un notebook (si existe la carpeta notebooks/)
-bash
-Copiar
-Editar
+
 # Instalar jupyter si no está en requirements
 pip install jupyter
 jupyter notebook notebooks/intro.ipynb
-📂 Estructura sugerida
-arduino
-Copiar
-Editar
-primer_repositorio_phyton/
-├─ scripts/           # scripts ejecutables (CLI)
-├─ utils/             # módulos reutilizables (funciones/clases)
-├─ notebooks/         # cuadernos Jupyter (opcional)
-├─ tests/             # pruebas unitarias (pytest)
-├─ requirements.txt   # dependencias (si aplica)
-└─ README.md
-📝 Notas
-Si cambias el nombre de los scripts o módulos, actualiza los ejemplos de ejecución.
+
 
 Puedes añadir retos/ejercicios por carpeta (por tema).
 
 Si no utilizas tests/notebooks, elimina las secciones que no apliquen para mantener el README limpio.
 
-makefile
-Copiar
-Editar
-::contentReference[oaicite:0]{index=0}
+
